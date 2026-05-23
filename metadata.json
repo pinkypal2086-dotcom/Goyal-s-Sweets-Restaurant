@@ -1,0 +1,6 @@
+{
+  "name": "Goyal's Sweets & Restaurant",
+  "description": "Authentic Indian Sweets (Mithai), Thalis, Kababs & family dining in Naraingarh, Haryana.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

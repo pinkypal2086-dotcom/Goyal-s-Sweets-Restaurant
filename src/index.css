@@ -1,0 +1,92 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,wght@0,100..900;1,100..900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Inter", ui-sans-serif, system-ui;
+  --font-serif: "Playfair Display", Georgia, serif;
+  
+  --color-saffron-50: #fefdfb;
+  --color-saffron-100: #fdf7e7;
+  --color-saffron-200: #f8ecc4;
+  --color-saffron-300: #ecc75f; /* Shimmering Champagne Gold */
+  --color-saffron-400: #dfa837; /* Mid Warm Royal Gold */
+  --color-saffron-500: #c28d25; /* Antique Gold */
+  --color-saffron-600: #9e7019; /* Antique Brass */
+  --color-saffron-650: #885e13; /* Medium Antique Brass */
+  --color-saffron-700: #714d0d; /* Deep Antique Gold */
+  
+  --color-maroon-50: #fff9f9;
+  --color-maroon-100: #fee2e2;
+  --color-maroon-850: #dc2626;
+  --color-maroon-900: #5c0612; /* Rich Crimson Maroon */
+  --color-maroon-950: #3b0209; /* Imperial Midnight Burgundy */
+  
+  --color-cream-50: #fdfdfc; /* Pristine Soft Linen */
+  --color-cream-100: #ffffff; /* Absolute High-Contrast Pure White */
+  --color-cream-200: #faf8f3; /* Rich Royal Silk Butter Cream */
+  --color-cream-300: #f4edd9; /* Shimmering Warm Sand */
+}
+
+/* Base custom defaults without breaking utility classes */
+@layer base {
+  body {
+    background-color: #ffffff;
+    color: #1a1b1e;
+    font-family: var(--font-sans);
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    color: var(--color-maroon-950);
+    font-family: var(--font-serif);
+  }
+}
+
+.font-serif-display {
+  font-family: var(--font-serif);
+}
+.font-sans-ui {
+  font-family: var(--font-sans);
+}
+
+/* Luxury visual accents */
+.luxury-border-double {
+  border: 4px double var(--color-saffron-500);
+}
+
+.luxury-gradient-gold {
+  background: linear-gradient(135deg, #fdf7e7 0%, #dfa837 50%, #9e7019 100%);
+}
+
+.luxury-gradient-dark {
+  background: linear-gradient(135deg, #ffffff 0%, #faf8f3 100%);
+}
+
+.royal-shadow {
+  box-shadow: 0 4px 20px -2px rgba(92, 6, 18, 0.03), 0 2px 10px -1px rgba(194, 141, 37, 0.06);
+}
+
+.royal-shadow-lg {
+  box-shadow: 0 10px 45px -5px rgba(92, 6, 18, 0.05), 0 4px 18px -2px rgba(194, 141, 37, 0.09);
+}
+
+/* Map illustrations details */
+rect[fill="#f8fafc"], rect[fill="#faf5e6"], rect[fill="#fbf8f0"] {
+  fill: #fdfcf7 !important;
+  stroke: rgba(194, 141, 37, 0.15) !important;
+}
+
+text[fill="#66001a"], text[fill="#1e293b"] {
+  fill: #3b0209 !important;
+}
+
+text[fill="#66001a"] {
+  fill: #dfa837 !important;
+}
+
+/* Menu Booklet layout cards */
+.bg-\[\#fbf8f0\] {
+  background-color: #fdfbf7 !important;
+  border-color: rgba(194, 141, 37, 0.25) !important;
+}
+
+
